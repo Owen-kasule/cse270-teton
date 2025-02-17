@@ -1,4 +1,4 @@
-const LAT = "443.8866";
+const LAT = "43.8866";
 const LON = "-111.6777";
 const APIKEY = "<YOUR API KEY HERE>";
 
