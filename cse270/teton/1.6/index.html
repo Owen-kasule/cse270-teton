@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="System Under Test for CSE 270 - BYU-Idaho" >
+    <title>Teton Idaho CoC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+    <link rel="stylesheet" href="./styles/base.css" >
+    <link rel="stylesheet" href="./styles/medium.css" >
+    <link rel="stylesheet" href="./styles/large.css" >    
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="./config/config.js" defer></script>
+    <script src="./scripts/header-footer.js" defer></script>    
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+
+    <!-- This is a comment -->
+    <header>
+      <div class="header-top">        
+          <div class="header-logo">
+            <a href="index.html"><img src="./images/teton-logo-150.webp" alt="Teton Chamber of Commerce Logo"></a>            
+          </div>          
+          <div class="header-title">
+            <h1>Teton Idaho</h1>
+            <h2>Chamber of Commerce</h2>
+          </div>
+          <div class="header-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png" alt="instagram logo"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="./images/pinterest-40.png" alt="facebook logo"></a>
+          </div>
+      </div>
+      <nav>
+        <button id="hamburger-menu">
+          <span id="hamburger-x"><img src="./images/hamburger-close.png" alt="hamburger menu image"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="hamburger menu image"></span>
+        </button>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="header-today">
+        <p></p>
+      </div>
+    </header>
+    <main class="home-main">
+      <section id="nopad" class="main-hero">
+        <h2>Welcome to our Beautiful City!</h2>
+        <a href="join.html" class="a-button">Join Us</a>
+      </section>
+      <section class="main-event">
+        <h1>Local Events</h1>
+        <h3>Preparations for Town Parade</h3>
+        <p class="centered-image"><img src="./images/parade.jpg" alt="A community parade"></p>
+        <p>Preparations are well underway for the community parade. Parades are an important part of the community spirit and 
+          celebrates the pride of our small community. Join us in celebrating our shared heritage!
+        </p>
+        <p>
+          Contact Cynthia Jones for more information about getting involved at 208-458-0001.
+        </p>
+      </section>
+      <section class="main-weather">
+        <h2>Weather</h2>
+        <div>
+            <img id="weathericon" src="./images/sunny.png" alt="weather icon">
+            <h2><span id="temperature">?</span>&deg; F</h2>
+        </div>
+        <h2 id="weatherdesc">?</h2>
+        <hr>
+        <h3>Wind Speed: <span id="windspeed">?</span> mph</h3>
+    </section> 
+      <section class="main-news">
+        
+        <h3>Race to the Moon at Teton Elementary</h3>
+        <p class="centered-image"><img src="./images/teton-elementary-ice-320.jpg"
+            alt="Teton Elementary school children playing"></p>
+        <p>Teton Elementary in Teton, Idaho started a "Race to the Moon" project last September to promote physical
+          activity while learning about space. </p>
+        <p>They say they are trying to collect enough exercise miles to figuratively make it to the moon.</p>
+        <p>Along the way, teachers involved say they are also learning about geography. They would like to have people
+          from all around the world submit 'exercise donations' from any place in the world.</p>
+        <p>They report so far they have received donations from 30 different states and 26 different countries. Now that
+          it is winter and people are not out as much, they say it is harder to get miles. They are asking people around
+          the community and world to donate their exercise miles to help get to the moon.</p>
+        <p>"We need everyone's help! Could you please help us spread the word to the public by promoting our activity?"
+        </p>
+        <p>Courtsey of <a
+            href="https://localnews8.com/news/local-news/2023/01/18/teton-elementary-on-the-way-to-the-moon/">localnews8.com</a>
+        </p>
+      </section>
+      <section class="main-spotlight"></section>
+      <section class="main-join">
+        <h3>Join Us</h3>
+        <p>Join the Teton Chamber of Commerce and experience all of the helpful benefits.</p>
+        <p><a href="join.html" class="a-button">Join Us!</a></p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/teton-logo-150.webp" alt="Teton Idaho Chamber of Commerce Logo">
+        </div>
+        <div class="footer-contact">
+          <h3>Teton Idaho Chamber of Commerce</h3>
+          <p>123 Main Street<br>Teton, ID 83451</p>
+          <p><a href="mailto:notavalidaddress@nowhere.email">info@tetonchamber.org</a></p>
+          <p>208-458-4444</p>
+        </div>
+        <div class="footer-map">
+          <p><a href="https://maps.app.goo.gl/qLA7Sjpp6FN63ULG9" target="_blank"><img src="./images/google-maps.png" alt="Google map icon"></a></p>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

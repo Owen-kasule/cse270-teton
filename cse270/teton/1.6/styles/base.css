@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Ubuntu&display=swap");
+
+:root{
+    --darker-green: #767a66;
+    --dark-green: #ccd5ae;
+    --light-green: #e9edc9;
+    --cream: #fefae0;
+    --tan: #faedcd;  
+    --brown: #d4a373;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;    
+  background-color: var(--cream);
+}
+
+#content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+header, footer{
+    background-color: var(--light-green);
+    border: 1px black solid;        
+}
+
+header{
+    position: relative;
+}
+
+.header-top{
+    display: grid;    
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.header-icons{    
+    text-align: center;
+}
+
+.header-today{
+    text-align: center;
+    background-color: var(--dark-green);
+    padding: .25rem;
+}
+
+/* Footer */
+.footer-content{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-base{
+    text-align: center;
+    display: none;
+}
+
+.footer-contact{
+    text-align: center;
+}
+
+.footer-map{
+    text-align: center;    
+}
+
+hr{
+    height: 3px;
+    background-color: var(--dark-green);
+    border: none;        
+}
+
+/* Nav bar styling */
+
+nav ul{
+    position: absolute;
+    bottom: -300px;
+    left: -1px;
+    display: none;
+    flex-direction: column;    
+    width: 300px;
+    padding-inline-start: 0px;
+    z-index: 1;
+}
+
+nav ul li{
+    list-style: none;    
+    flex: 1;
+    border: 1px black solid;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--dark-green);
+    font-size: 1.25rem;
+}
+
+nav ul li a.active{
+    background-color: var(--tan);
+}
+
+
+nav ul li a:hover{    
+    background-color: var(--tan);
+}
+
+#admin-menu{
+    display: none;
+}
+
+/** Hamburger menu stuff **/
+
+#hamburger-menu{
+    background-color: var(--dark-green);
+    border: 0;    
+    margin: 0;
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+}
+
+#hamburger-x{
+    display: none;
+}
+
+#hamburger-equiv{
+    display: inline;
+}
+
+nav ul.menu-active{
+    display: flex;
+}
+
+#hamburger-x.menu-active{
+    display: inline;
+}
+
+#hamburger-equiv.menu-active{
+    display: none;
+}
+/** Meet and Greet **/
+
+#meet-greet{
+    display: none;
+}
+
+#meet-greet.active{
+    background-color: var(--dark-green);
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+    display: block;
+    padding: .5rem;
+}
+
+/** Main Page Stuff **/
+
+.a-button {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--brown);
+}
+
+.home-main section{
+    border: 2px solid black;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--brown);
+}
+
+.home-main div{
+    border: 1px solid black;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.home-main h3{
+    text-align: center
+}
+
+.home-main img{
+    max-width: 100%;
+}
+
+.main-hero{
+    grid-area: h;
+    position: relative;      
+    background-image: url('../images/teton-river-900.jpg');    
+    background-position: center;
+    text-align: center;
+    height: 400px;         
+}
+
+.main-hero p{
+    margin: 0;
+}
+
+.main-hero h2{
+    background-color: var(--brown);
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: .5rem;
+}
+
+.a-button{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: var(--tan);
+    border-radius: 10px;    
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;    
+}
+
+.a-button:hover{
+    background-color: var(--brown);
+    color: white;
+}
+
+.main-join .a-button{
+    position: static;
+}
+
+#nopad{
+    padding: 0;
+}
+
+.main-event{
+    grid-area: e;
+}
+
+.main-event img{
+    border: 2px solid black;
+}
+
+.main-event h1{
+    text-align: center;
+}
+
+.main-news{
+    grid-area: n;
+}
+
+.centered-image{
+    text-align: center;
+}
+
+.main-news img{
+    border: 2px solid black;
+}
+
+.main-news h1{
+    text-align: center;
+}
+
+.main-weather{
+    grid-area: w;
+    text-align: center;
+}
+
+.main-join{
+    grid-area: j;    
+}
+
+.main-join p, .main-join h1{
+    text-align: center;
+}
+
+.main-join button{
+    border-radius: 5px;
+    background-color: var(--tan);
+    padding: .5rem;
+    font-size: 1.5rem;    
+    width: 100%;
+}
+
+.main-join button a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.main-join button:hover{
+    background-color: var(--brown);
+    color: white;
+}
+
+.main-spotlight{
+    grid-area: x;
+}
+
+.main-spotlight div{    
+    background-color: var(--tan);
+}
+
+.main-spotlight img{
+    border: 2px black solid;
+    max-width: 100%;
+}
+
+.main-spotlight h4, .main-spotlight h1{
+    text-align: center;
+}
+
+.main-spotlight p{
+    text-align: center;
+}
+
+.spotlight3{
+    display: none;
+}
+
+/** Discover page **/
+
+.discover-main section{
+    border: 2px black solid;
+    margin: 1rem;    
+}
+
+.discover-image{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 432px;    
+}
+
+.discover-image div {    
+    margin: 1rem;    
+}
+
+.discover-demographics h2 {    
+    margin: 1rem;
+}
+
+.discover-demographics h3 {    
+    margin: 1rem;
+}
+
+.discover-main section {    
+    margin: 1rem;
+}
+
+.discover-main img {
+    width: 400px;
+    height: auto;
+}
+
+/*** Join page ***/
+.join{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+  .join > div{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px black solid;
+    border-radius: 5px;  
+    width: 90%;
+    min-width: 400px;
+  }
+
+  label.myinput{
+    display:block;
+    padding-top: 1rem;
+  }
+  
+  label.myinput input, label.myinput textarea{
+    display:block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+  }
+  
+  label.myradio{
+    display: block;
+    margin-right: .2rem;
+    font-size: 1.3rem;  
+    padding-top: .5rem;
+  }
+  
+  label.myradio input{
+    margin-right: 1rem;
+  }
+  
+  .mysubmit{
+    background-color: #338;
+    color: white;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+    font-size: 1.5rem;
+  }
+  
+  label.myinput input:required{
+    border-color: #922;
+  }
+  
+
+  .thankyou-main section{
+    margin: 2rem 0rem;
+  }
+/* Directory Page Stuff */
+.directory-main{
+    width: 100%;
+}
+
+#directory-selector{
+    width: 100%;
+    text-align: center;
+}
+
+#directory-selector button{
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 5px;
+    background-color: var(--darker-green);
+    border: 1px black solid;
+}
+
+#directory-selector button.active{
+    background-color: orangered;
+}
+
+/* Cards view */
+
+.directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+.directory-cards section{
+    text-align: center;    
+    border: 2px solid grey;    
+    width: 300px;
+    background-color: var(--darker-green);
+    padding: 1rem;
+    margin: .5rem;
+}
+
+/* List View */
+
+.directory-list{    
+    display: grid;
+    justify-items: center;   
+    padding: 1rem;    
+}
+
+.directory-main a{    
+    color: lightgrey;
+}
+
+.directory-main a:visited{    
+    color: lightgrey;
+}
+
+.directory-list section img{
+    display: none;
+}
+
+.directory-list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.directory-list section:nth-child(odd) {
+    background-color: var(--darker-green);
+}
+
+.directory-list section:nth-child(even) {
+    background-color: var(--dark-green);
+}
+
+  /* Thankyou Styling */
+
+.thankyou{
+    text-align: center;    
+}
+
+.join-confirm table{
+    margin: 0 auto;    
+}
+.join-confirm table td{
+    padding: 0 .5rem;
+}
+
+.right-justify{
+    text-align: right;
+    font-weight: bold;
+}
+
+.left-justify{
+    text-align: left;
+}
+
+/* Join Wizard */
+
+.join-wizard-main{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #e9edc9;
+    border: 1px solid grey;
+    padding: 2rem;
+}
+
+.join-wizard-main input[type=submit], .join-wizard-main button{
+    max-width: 800px;    
+    background-color: blue;
+    color: white;
+    margin: 2rem 1rem 1rem 0rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+/* Admin page */
+
+.login{
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 1rem;
+}
+
+.errorMessage{
+    font-size: 1.5rem;
+    color: maroon;        
+}
+
+.admin-main section form div{
+    text-align: center;    
+}
+
+.displaydata{
+    display: none;
+    text-align: center;
+}
+/*
+.admin-main{
+    display: none;
+}
+
+.admin-disabled{
+    font-size: 1.5rem;
+    color: maroon;        
+    text-align: center;   
+}
+*/

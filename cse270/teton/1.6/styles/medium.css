@@ -1,0 +1,58 @@
+/** Medium.css **/
+@media (min-width: 800px){
+    
+    .main-join{
+        display: block;
+    }    
+
+    .home-main{
+        display: grid;
+        grid-template-areas: "h h h"
+                             "n n n"
+                             "x x x"
+                             "j j j"
+                             "e e w";
+    }
+
+    .main-spotlight{
+        display: flex;
+    }
+
+    .main-hero{
+        grid-area: h;
+        position: relative;      
+        height: 600px; 
+        background-image: url('../images/teton-river-1200.jpg');    
+    }
+
+    .discover-main img {
+        width: 600px;
+        height: auto;
+    }
+
+    .footer-content{
+        flex-direction: row;
+        justify-content: center;
+    }
+ 
+    .footer-base{        
+        width: 100%;
+    }
+    
+    .footer-contact{
+        width: 80%;
+    }
+    
+    .footer-map{
+        width: 20%;
+    }    
+
+    .main-spotlight{
+        flex-direction: column;        
+    }
+
+    .main-spotlight div{
+        height: 50%;
+    }    
+    
+}

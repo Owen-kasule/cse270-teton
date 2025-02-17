@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce Testing Site for CSE 270 - BYU-Idaho - 2024" />
+    <title>Teton Idaho CoC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />    
+    <script src="./scripts/header-footer.js" defer></script>   
+    <script src="./scripts/join.js" defer></script> 
+  </head>
+  <body>
+    <div id="content">
+    <header>
+      <div class="header-top">        
+          <div class="header-logo">
+            <a href="index.html"><img src="./images/teton-logo-150.webp" /></a>            
+          </div>          
+          <div class="header-title">
+            <h1>Teton Idaho</h1>
+            <h2>Chamber of Commerce</h2>
+          </div>
+          <div class="header-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png" /></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="./images/pinterest-40.png" /></a>
+          </div>
+      </div>
+      <nav>
+        <button id="hamburger-menu">
+          <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="header-today"><p></p></div>
+    </header>
+    <main class="join-wizard-main">
+        <section>
+            <h3>Welcome to the Teton Chamber of Commerce Signup Wizard!</h3>
+            <p>To make it easy as possible to help you sign up for the Teton Idaho Chamber of Commerce, please fill in the required information.</p>
+            <form action="join-step4.html" method="GET">
+                <fieldset>                    
+                    <legend>Review the membership benefits below and choose the one that most interests you</legend>
+                    <h3>Non-Profit Membership</h3>          
+                    <ul>
+                      <li>For non profit organizations and there is no fee</li>
+                    </ul>
+                    <h3>Bronze Membership</h3>
+                    <ul>
+                      <li>15% discount on events</li>          
+                      <li>10% discount on advertising</li>          
+                      <li>Fee of $50/month</li>
+                    </ul>
+                    
+                    <h3>Silver Membership</h3>
+                    <ul>
+                      <li>25% discount on events</li>
+                      <li>15% discount on advertising</li>
+                      <li>Free participation in the trade fair</li>
+                      <li>Fee of $100/month</li>
+                    </ul>
+            
+                    <h3>Gold Membership</h3>
+                    <ul>
+                      <li>50% discount on events</li>          
+                      <li>50% discount on advertising</li>          
+                      <li>Free participation in the trade fair</li>          
+                      <li>5 free featured ads per year</li>          
+                      <li>1 free training per quarter</li>          
+                      <li>Fee of $250/month</li>
+                    </ul>
+                  <hr>
+                    <h3>Which Membership Do You Choose?</h3>          
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit" required>Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <input type="submit" name="submit" value="Next Step">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/teton-logo-150.webp" />
+        </div>
+        <div class="footer-contact">
+          <h3>Teton Idaho Chamber of Commerce</h3>
+          <p>123 Main Street<br />Teton, ID 83451</p>
+          <p><a href="mailto:notavalidaddress@nowhere.email">info@tetonchamber.org</a></p>
+          <p>208-458-4444</p>
+          <p>Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        </div>
+        <div class="footer-map">
+          <p><a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank"><img src="./images/google-maps.png" alt="Google maps icon"></a></p>
+          <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

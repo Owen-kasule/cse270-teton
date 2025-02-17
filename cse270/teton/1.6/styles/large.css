@@ -1,0 +1,53 @@
+
+/** Large.css **/
+@media (min-width: 1130px){
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* .home-main{
+        display: grid;
+        grid-template-areas: "e h h x"
+                             "w h h x"
+                             "j n n x";
+    }     */
+
+
+
+    #hamburger-menu{
+        display: none;
+    }
+
+    nav ul li a{
+        padding: .5rem;
+        font-size: 1rem;
+    }    
+
+    nav ul{
+        position: static;
+        width: 95%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }    
+
+    .main-hero{
+        grid-area: h;
+        position: relative;      
+        background-image: url('../images/teton-river-1200.jpg');    
+        background-position: center;
+        height: 600px;        
+    }
+
+    .discover-main img {
+        width: 800px;
+        height: auto;
+    }
+
+    section.join {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+}

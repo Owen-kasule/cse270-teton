@@ -1,0 +1,15 @@
+{
+  "coord": { "lon": -111.6777, "lat": 43.8866 },
+  "weather": [{ "id": 803, "main": "Clouds", "description": "broken clouds", "icon": "04d" }],
+  "base": "stations",
+  "main": { "temp": 61.5, "feels_like": 60.13, "temp_min": 58.53, "temp_max": 65.17, "pressure": 1020, "humidity": 59 },
+  "visibility": 10000,
+  "wind": { "speed": 3.44, "deg": 80 },
+  "clouds": { "all": 75 },
+  "dt": 1685842844,
+  "sys": { "type": 1, "id": 5735, "country": "US", "sunrise": 1685792794, "sunset": 1685847808 },
+  "timezone": -21600,
+  "id": 5609169,
+  "name": "Sugar City",
+  "cod": 200
+}

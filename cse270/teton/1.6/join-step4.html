@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce Testing Site for CSE 270 - BYU-Idaho - 2024" />
+    <title>Teton Idaho CoC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />    
+    <script src="./scripts/header-footer.js" defer></script>    
+    <script src="./scripts/join.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+    <header>
+      <div class="header-top">        
+          <div class="header-logo">
+            <a href="index.html"><img src="./images/teton-logo-150.webp" /></a>            
+          </div>          
+          <div class="header-title">
+            <h1>Teton Idaho</h1>
+            <h2>Chamber of Commerce</h2>
+          </div>
+          <div class="header-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png" /></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="./images/pinterest-40.png" /></a>
+          </div>
+      </div>
+      <nav>
+        <button id="hamburger-menu">
+          <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="header-today"><p></p></div>
+    </header>
+    <main class="join-wizard-main">
+        <section>
+            <h3>Welcome to the Teton Chamber of Commerce Signup Wizard!</h3>
+            <p>To make it easy as possible to help you sign up for the Teton Idaho Chamber of Commerce, please fill in the required information.</p>
+            <form action="thankyou.html" method="GET">
+                <fieldset>                    
+                    <legend>Describe your business to us. We will use this information in your spotlight!</legend>                    
+                    <label class="myinput">Website URL<input type="url" name="websiteURL" required></label>                    
+                    <label class="myinput">Business Description<textarea name="description" cols="40" rows="5"></textarea></label>
+                    <label><input id="currentdate" type="hidden" name="currentdate" value=""></label>
+                    <input type="submit" name="submit" value="Join the Chamber!">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/teton-logo-150.webp" />
+        </div>
+        <div class="footer-contact">
+          <h3>Teton Idaho Chamber of Commerce</h3>
+          <p>123 Main Street<br />Teton, ID 83451</p>
+          <p><a href="mailto:notavalidaddress@nowhere.email">info@tetonchamber.org</a></p>
+          <p>208-458-4444</p>
+          <p>Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        </div>
+        <div class="footer-map">
+          <p><a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank"><img src="./images/google-maps.png" alt="Google maps icon"></a></p>
+          <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
