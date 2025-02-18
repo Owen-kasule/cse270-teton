@@ -21,8 +21,7 @@ class TestSmokeTest():
   def test_logoHeaderandTitle(self):
     self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.set_window_size(1141, 868)
-    elements = self.driver.find_elements(By.CSS_SELECTOR, ".header-top")
-    assert len(elements) > 0
+    self.driver.find_element(By.CSS_SELECTOR, ".header-top").click()
     assert self.driver.find_element(By.CSS_SELECTOR, ".header-top").text == "Teton Idaho\\\\nChamber of Commerce"
     assert self.driver.title == "Teton Idaho CoC"
   
