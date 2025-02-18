@@ -19,7 +19,7 @@ class TestSmokeTest():
     self.driver.quit()
   
   def test_logoHeaderandTitle(self):
-    self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
+    self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.set_window_size(1141, 868)
     elements = self.driver.find_elements(By.CSS_SELECTOR, ".header-top")
     assert len(elements) > 0
@@ -27,7 +27,7 @@ class TestSmokeTest():
     assert self.driver.title == "Teton Idaho CoC"
   
   def test_directoryGridandListfeature(self):
-    self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
+    self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.set_window_size(1130, 868)
     self.driver.find_element(By.LINK_TEXT, "Directory").click()
     self.driver.find_element(By.ID, "directory-grid").click()
@@ -38,7 +38,7 @@ class TestSmokeTest():
     assert len(elements) > 0
   
   def test_homePageSpotlightsandJoinFeature(self):
-    self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
+    self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.find_element(By.CSS_SELECTOR, ".main-spotlight").click()
     elements = self.driver.find_elements(By.CSS_SELECTOR, ".main-spotlight")
     assert len(elements) > 0
@@ -48,7 +48,7 @@ class TestSmokeTest():
     self.driver.set_window_size(1133, 868)
   
   def test_joinPageDataEntry(self):
-    self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
+    self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.set_window_size(1145, 868)
     self.driver.find_element(By.LINK_TEXT, "Join").click()
     self.driver.find_element(By.NAME, "fname").click()
@@ -67,7 +67,7 @@ class TestSmokeTest():
     assert len(elements) > 0
   
   def test_adminPageUsernamePassword(self):
-    self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
+    self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.set_window_size(1136, 868)
     self.driver.find_element(By.LINK_TEXT, "Admin").click()
     self.driver.find_element(By.ID, "username").click()
