@@ -22,7 +22,7 @@ class TestSmokeTest():
     self.driver.get("http://127.0.0.1:5500/cse270/teton/1.6/index.html")
     self.driver.set_window_size(1141, 868)
     self.driver.find_element(By.CSS_SELECTOR, ".header-top").click()
-    assert self.driver.find_element(By.CSS_SELECTOR, ".header-top").text == "Teton Idaho\\\\nChamber of Commerce"
+    assert self.driver.find_element(By.CSS_SELECTOR, ".header-title > h2").text == "Chamber of Commerce"
     assert self.driver.title == "Teton Idaho CoC"
   
   def test_directoryGridandListfeature(self):
